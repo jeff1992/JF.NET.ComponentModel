@@ -2,9 +2,9 @@
 
 namespace JF.NET.ComponentModel
 {
-    public class DepedenceAttribute
+    public class DependenceAttribute : Attribute
     {
-        public DepedenceAttribute(params string[] properties)
+        public DependenceAttribute(params string[] properties)
         {
             this.Properties = properties;
         }
