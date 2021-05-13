@@ -4,10 +4,10 @@ namespace JF.NET.ComponentModel
 {
     public class DepedenceAttribute
     {
-        public DepedenceAttribute(string propertyPath)
+        public DepedenceAttribute(params string[] properties)
         {
-            this.PropertyPath = propertyPath;
+            this.Properties = properties;
         }
-        public string PropertyPath { get; private set; }
+        public string[] Properties { get; private set; }
     }
 }
